@@ -20,19 +20,19 @@ body {
   text-align: center;
 }
 
-.budget-summary .container {
+.container {
   display: flex;
   justify-content: center;
 }
 
-.budget-summary .inner-container {
+.inner-container {
   display: grid;
   grid-column-gap: 200px;
   grid-template-columns: auto auto;
 }
 
 /**** Income & Expenses ****/
-.income-expenses h2 {
+.income-expenses {
   text-align: center;
   border: 2px solid #000;
   width: 50%;

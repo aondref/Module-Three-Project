@@ -12,7 +12,7 @@ function App() {
             <div className="left-section">
               <div className="budget-summary-section">
                 <h3>Total Monthly Income</h3>
-                <p>$3,750.00</p>
+                <p>$6,000.00</p>
               </div>
               <div className="budget-summary-section">
                 <h3>Total Monthly Expenses</h3>
@@ -23,7 +23,7 @@ function App() {
             <div className="right-section">
               <div className="budget-summary-section">
                 <h3>Total Monthly Savings</h3>
-                <p>$550.00</p>
+                <p>$2,000.00</p>
               </div>
               <div className="budget-summary-section">
                 <h3>Savings</h3>
@@ -37,9 +37,27 @@ function App() {
       <div className="income-expenses">
         <h2>Income/Expenses</h2>
 
-        <div className="income"></div>
-        <div className="expenses"></div>
+        <div className="container">
+          <div className="inner-container"> 
+            <div className="income">
+              <h3>Income</h3>
+              <div className="income-section">
+                <h4>Salary</h4>
+                <p>$70,000.00</p>
+              </div>
+            </div>
+            
+            <div className="expenses">
+              <h3>Expenses</h3>
+              <div className="expenses-container">
+                <h4>Rent</h4>
+                <p>$1,500.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
     </div>
   );
 }
