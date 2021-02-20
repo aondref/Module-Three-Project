@@ -1,0 +1,31 @@
+/**** General ****/
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.App h1 {
+  text-align: center;
+}
+
+/**** Budget Summary ****/
+.budget-summary {
+  border: 2px solid #000;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.budget-summary h2 {
+  text-align: center;
+}
+
+.budget-summary .container {
+  display: flex;
+  justify-content: center;
+}
+
+.budget-summary .inner-container {
+  display: grid;
+  grid-column-gap: 200px;
+  grid-template-columns: auto auto;
+}
