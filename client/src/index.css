@@ -13,6 +13,7 @@ body {
   border: 2px solid #000;
   width: 50%;
   margin: 0 auto;
+  margin-bottom: 2.5%;
 }
 
 .budget-summary h2 {
@@ -28,4 +29,12 @@ body {
   display: grid;
   grid-column-gap: 200px;
   grid-template-columns: auto auto;
+}
+
+/**** Income & Expenses ****/
+.income-expenses h2 {
+  text-align: center;
+  border: 2px solid #000;
+  width: 50%;
+  margin: 0 auto;
 }

@@ -32,11 +32,13 @@ function App() {
             </div>
           </div>
         </div>
-
       </div>
 
       <div className="income-expenses">
         <h2>Income/Expenses</h2>
+
+        <div className="income"></div>
+        <div className="expenses"></div>
       </div>
     </div>
   );
