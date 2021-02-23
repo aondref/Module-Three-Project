@@ -44,6 +44,20 @@ function App() {
               <div className="income-section">
                 <h4>Salary</h4>
                 <p>$70,000.00</p>
+                <table className="income-table">
+                  <thead>
+                    <tr>
+                      <th>Income</th>
+                      <th>Amount</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Salary</td>
+                      <td>$70,000.00</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
             
@@ -52,6 +66,20 @@ function App() {
               <div className="expenses-container">
                 <h4>Rent</h4>
                 <p>$1,500.00</p>
+                <table className="expense-table">
+                  <thead>
+                    <tr>
+                      <th>Expenses</th>
+                      <th>Amount</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Rent</td>
+                      <td>$1,500.00</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
