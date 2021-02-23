@@ -5,7 +5,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 
-@Entity
+@Entity //Not sure about this one. Need to learn more.
 @Data //The data annotation from lombok is pretty cool. It handles all the getter / setter mess of code. Very DRY.
 @Table(name="users") //Name of the table in the database
 public class User {
