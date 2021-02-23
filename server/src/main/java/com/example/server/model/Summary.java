@@ -11,8 +11,6 @@ public class Summary {
 
     @Id
     private Long id;
-
     private String summaries;
-
     private Double amount;
 }
