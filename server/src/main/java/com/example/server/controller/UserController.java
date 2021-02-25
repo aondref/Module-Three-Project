@@ -1,22 +1,25 @@
 package com.example.server.controller;
 
+
 import com.example.server.model.User;
+import com.example.server.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Collection;
+import java.util.List;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping(path = "api/v1/user")
 public class UserController {
-    private UserController userController;
 
-    public UserController(UserController userController) {
-        super();
-        this.userController = userController;
-    }
+    private final UserService userService;
 
-    @GetMapping("/user")
-    Collection<User> users() { return }
+    @Autowired
+    public UserController(UserService userService) { this.userService = userService; }
+
+    @GetMapping
+    public List<User> getUsers() { return userService.getUsers(); }
+
 }
