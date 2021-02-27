@@ -7,30 +7,19 @@ import javax.persistence.*;
 public class User {
 
     @Id
-    @SequenceGenerator(
-            name = "user_sequence",
-            sequenceName = "user_sequence",
-            allocationSize = 1
-    )
-
-    @GeneratedValue(
-            strategy = GenerationType.SEQUENCE,
-            generator = "student_sequence"
-    )
-
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
+
+    @Column(name = "user_name")
     private String name;
+
+    @Column(name = "user_email")
     private String email;
+
+    @Column(name = "user_salary")
     private Double salary;
 
     public User() {
-    }
-
-    public User(Long id, String name, String email, Double salary) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.salary = salary;
     }
 
     public User(String name, String email, Double salary) {
@@ -80,5 +69,4 @@ public class User {
                 ", salary=" + salary +
                 '}';
     }
-
 }

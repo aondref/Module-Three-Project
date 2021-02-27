@@ -15,19 +15,37 @@ public class UserConfig {
     CommandLineRunner commandLineRunner(UserRepository repository) {
         return args -> {
             User aondre = new User(
-                    "Aondre",
-                    "aondre.brown@gmail.com",
+                    "Aondre Franklin",
+                    "aondre.franklin@gmail.com",
                     70000.00
             );
 
-            User angel = new User(
-                    "Angel",
-                    "angel.juarez@gmail.com",
+            User brock = new User(
+                    "Brock Green",
+                    "brock.green@gmail.com",
+                    65000.00
+            );
+
+            User carl = new User(
+                    "Carl Coffee",
+                    "carl.coffee@gmail.com",
+                    75000.00
+            );
+
+            User daniel = new User(
+                    "Daniel Treaty",
+                    "daniel.treaty@gmail.com",
                     120000.00
             );
 
+            User edward = new User(
+                    "Edward Williams",
+                    "edward.williams@gmail.com",
+                    160000.00
+            );
+
             repository.saveAll(
-                    List.of(aondre, angel)
+                    List.of(aondre, brock, carl, daniel, edward)
             );
         };
     }
